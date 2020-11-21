@@ -23,7 +23,9 @@ class App extends React.Component {
 
   render(){
     return(
-      <div>{this.state.astronauts.map(person => person.name)}</div>
+      <div>
+        {this.state.astronauts.map(person => <p>{person.name}</p>)}
+      </div>
     )
   }
 
